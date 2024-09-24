@@ -1,0 +1,110 @@
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+.landing-main-container {
+    height: 100vh;
+    width: 100%;
+    background-image: url("https://img.freepik.com/free-vector/stylish-white-with-spiral-hexagonal-shapes_1017-26763.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.landing-content {
+    display: flex;
+    /* background-color: aquamarine; */
+}
+
+.landing-content-left {
+    height: 100%;
+    /* background-color: antiquewhite; */
+    align-self: center;
+    padding: 4rem 3rem;
+    /* line-height: 2rem; */
+}
+
+.landing-content-left h1 {
+    font-size: 4vw;
+    margin-bottom: 1rem;
+}
+
+.landing-content-left h1 span {
+    color: blueviolet;
+}
+
+.landing-content-left p {
+    margin-bottom: 1rem;
+    color: rgb(154, 152, 152);
+}
+
+.landing-content-left button {
+    padding: 7px 30px;
+    background-color: blueviolet;
+    color: white;
+    /* font-weight: 700; */
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.landing-content .landing-content-right {
+    height: 500px;
+    width: 370px;
+    border-radius: 7%;
+    overflow: hidden;
+    box-shadow: 10px 10px 10px gray;
+}
+
+/* .landing-content-right img {
+    height: 100%;
+    width: 100%;
+    border-radius: 30% 70% 67% 33% / 19% 24% 76% 81%;
+    object-fit: cover;
+} */
+
+.landing-content #design {
+    height: 100%;
+    width: 80vw;
+    /* border: 1px solid black; */
+    animation: slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #09f 50%, rgb(148, 51, 204) 50%);
+    overflow: hidden;
+}
+
+.landing-content .landing-content-right .bg2 {
+    animation-direction: alternate-reverse;
+    animation-duration: 4s;
+}
+
+.landing-content .landing-content-right .bg3 {
+    animation-duration: 5s;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@media (max-width: 767px) {
+    .landing-content {
+        flex-direction: column;
+    }
+
+    .landing-content-left {
+        padding: 1rem 3rem;
+    }
+
+    .landing-content-left h1 {
+        font-size: 7vw;
+    }
+
+    .landing-content-right {
+        visibility: hidden;
+    }
+}

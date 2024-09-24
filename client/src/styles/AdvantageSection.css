@@ -1,0 +1,18 @@
+.advantage-section-main-container {
+    padding: 3rem 4rem;
+}
+
+.advantage-section-title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.advantage-section-title span {
+    color: blueviolet;
+}
+
+.advantage-section-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
